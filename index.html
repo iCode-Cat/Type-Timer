@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo Speed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="wrapper">
+
+        <div class="header">
+            <p class="title-small">TYPING SPEED TEST
+            </p>
+            <h1 class="title large">Test your typing skills
+            </h1>
+        </div>
+
+        <div class="stats">
+            <div class="circle">
+                <div class="seconds">60</div>
+                <p>seconds</p>
+            </div>
+            <div class="circle">
+                <div class="words">0</div>
+                <p>seconds</p>
+            </div>
+            <div class="circle">
+                <div class="chars">0</div>
+                <p>seconds</p>
+            </div>
+            <div class="circle">
+                <div class="accuracy">0</div>
+                <p>seconds</p>
+            </div>
+        </div>
+        
+        <div class="sentence-container">
+            
+            <div class="start">Start typing</div>
+            <div contenteditable="true" class="sentence" id="sentence">
+                lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque quod ullam aperiam alias consequuntur illo nulla sequi dolor fugiat. Laudantium consequuntur dolorum magnam ipsum fuga vitae maiores eaque quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nesciunt eveniet. Minima, magnam optio deleniti impedit odio commodi facilis rerum quisquam illum quos eos culpa at doloribus molestias corporis dolore.
+            </div>
+            <div contenteditable="true" class="correct">
+                <span class="result" style="color:green"></span>
+            </div>
+        </div>
+                
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

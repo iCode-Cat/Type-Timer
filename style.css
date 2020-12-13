@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Rajdhani', sans-serif;
+  line-height: 1.2;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.header p {
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+.header h1 {
+  font-size: 4.25rem;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 523px;
+  margin-top: 40px;
+}
+
+.stats .circle {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 111px;
+  width: 111px;
+  background-color: #f8d226;
+  border-radius: 50%;
+}
+
+.seconds, .words, .chars, .accuracy {
+  font-size: 3rem;
+}
+
+.sentence-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 1024px;
+  height: 140px;
+  -webkit-box-shadow: 1px 1px 20px 1px rgba(51, 51, 51, 0.198);
+          box-shadow: 1px 1px 20px 1px rgba(51, 51, 51, 0.198);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sentence-container .sentence, .sentence-container .correct {
+  margin-right: -500px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333;
+  font-size: 2.3rem;
+  width: 100%;
+  height: 40px;
+}
+
+.start {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  width: 112px;
+  height: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: #f8d226;
+  color: #333;
+  -webkit-animation-name: move;
+          animation-name: move;
+  animation-direction: alternate-reverse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes move {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  margin-right: 100px;
+}
+
+:-ms-input-placeholder {
+  margin-right: 100px;
+}
+
+::-ms-input-placeholder {
+  margin-right: 100px;
+}
+
+::placeholder {
+  margin-right: 100px;
+}
+
+.indicator {
+  left: 49%;
+  right: 50%;
+  height: 40px;
+  width: 10px;
+  background-color: rgba(109, 255, 83, 0.493);
+}
+
+.correct {
+  position: absolute;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=style.css.map */
