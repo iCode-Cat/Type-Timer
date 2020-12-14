@@ -92,6 +92,7 @@ section {
 }
 
 .sentence-container {
+  padding: 1rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,20 +106,14 @@ section {
   margin-top: 100px;
   width: 100%;
   max-width: 1024px;
-  height: 140px;
+  min-height: 140px;
   -webkit-box-shadow: 1px 1px 20px 1px rgba(51, 51, 51, 0.198);
           box-shadow: 1px 1px 20px 1px rgba(51, 51, 51, 0.198);
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .sentence-container .sentence, .sentence-container .correct {
-  margin-right: -500px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -128,7 +123,7 @@ section {
   color: #333;
   font-size: 2.3rem;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
 }
 
 .start {
@@ -210,5 +205,28 @@ input {
 .correct {
   position: absolute;
   margin-top: 100px;
+}
+
+.custom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(51, 51, 51, 0.808);
+  width: 100%;
+  height: 100vh;
+}
+
+.custom textarea, .custom button {
+  max-width: 300px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

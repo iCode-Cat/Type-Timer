@@ -72,6 +72,7 @@ section {
 }
 
 .sentence-container {
+    padding: 1rem;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -79,23 +80,23 @@ section {
     margin-top: 100px;
     width: 100%;
     max-width: 1024px;
-    height: 140px;
+    min-height: 140px;
     box-shadow: 1px 1px 20px 1px rgba(51, 51, 51, 0.198);
-    white-space: nowrap;
     
-    overflow: hidden;
+    
+ 
     .sentence ,.correct {
         
       
-        margin-right: -500px;
+        
         transition: 0.3s;
-        display: flex;
+
         justify-content: flex-start;
         align-items: center;
         color: #333;
         font-size: 2.3rem;
         width: 100%;
-        height: 40px;
+        min-height: 40px;
 
     }
 }
@@ -152,4 +153,27 @@ input {
 .correct{
     position: absolute;
     margin-top: 100px;
+}
+
+span {
+    
+   
+}
+
+.custom {
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.808);
+    width: 100%;
+    height: 100vh;
+
+    textarea , button {
+        max-width: 300px;
+        width: 100%;
+    }
+  
+
 }

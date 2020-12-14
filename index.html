@@ -22,34 +22,41 @@
         <div class="stats">
             <div class="circle">
                 <div class="seconds">60</div>
-                <p>seconds</p>
+                <p>Seconds</p>
             </div>
             <div class="circle">
-                <div class="words">0</div>
-                <p>seconds</p>
+                <div class="letters words">0</div>
+                <p>Letters</p>
             </div>
             <div class="circle">
-                <div class="chars">0</div>
-                <p>seconds</p>
+                <div class="chars mistakes">0</div>
+                <p>Mistake</p>
             </div>
             <div class="circle">
-                <div class="accuracy">0</div>
-                <p>seconds</p>
+                <div class="accuracy scores">0</div>
+                <p>Score</p>
             </div>
         </div>
         
         <div class="sentence-container">
             
             <div class="start">Start typing</div>
-            <div contenteditable="true" class="sentence" id="sentence">
-                lorem ipsum dolor sit amet consectetur adipisicing elit. Illum atque quod ullam aperiam alias consequuntur illo nulla sequi dolor fugiat. Laudantium consequuntur dolorum magnam ipsum fuga vitae maiores eaque quasi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nesciunt eveniet. Minima, magnam optio deleniti impedit odio commodi facilis rerum quisquam illum quos eos culpa at doloribus molestias corporis dolore.
+            <div contenteditable="false" class="sentence" id="sentence">
             </div>
             <div contenteditable="true" class="correct">
-                <span class="result" style="color:green"></span>
+               
             </div>
+        </div>
+
+        <button hidden class="change-text">Change the text</button>
+
+        <div class="custom">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button class="changeButton">Change</button>
         </div>
                 
     </section>
+    
 
     <script src="index.js"></script>
 </body>
